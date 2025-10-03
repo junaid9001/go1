@@ -8,6 +8,6 @@ return
 }
 
 func main(){
-	mult,hai:=test(10, " junaid")
+	mult,hai:=test(10, " junaid ")
 	fmt.Println(mult,hai)
 }

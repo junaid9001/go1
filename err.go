@@ -1,23 +1,25 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 )
 
-func handlerror(num1, num2 int) (int, error) {
+func handlerror(num1, num2 int) (int,error) {
 	if num2 == 0 {
-		return 0, errors.New("cant do this dawg")
+		return 0,fmt.Errorf("cant divide %v by %v",num1,num2)
 	}
-	return num1 / num2, nil
+	return num1 / num2,nil
+	
+
 }
 
+
 func main() {
-	divi, err := handlerror(10, 0)
-	if err != nil {
-		fmt.Println(divi, err)
-	} else {
-		fmt.Println(divi)
-	}
+   sun,err:=handlerror(10,0)
+  if err!=nil{
+	fmt.Println(err)
+  }else{
+	fmt.Println(sun)
+  }
 
 }

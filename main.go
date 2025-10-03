@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import ("fmt"
+        "go1/xtra"            
+)
 
 //check odd or even
 
@@ -47,4 +49,5 @@ func calc() {
 func main() {
 	oddeven()
 	calc()
+	xtra.Greet("junaid")
 }
