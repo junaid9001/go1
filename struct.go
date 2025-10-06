@@ -8,6 +8,10 @@ import "fmt"
 		age int
 	}
 
+	pslice:=Person[]{
+
+	}
+
 
     func(reciever Person)Greet(){
 		fmt.Printf("your name is %v, and your age is %v",reciever.name,reciever.age)
